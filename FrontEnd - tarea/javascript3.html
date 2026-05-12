@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form OO</title>
+    <script type="text/javascript" src="js/script3.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body onload="loadList();">
+    <center>
+
+
+        <form>
+            <input type="text" id="boxId" placeholder="Ingrese su ID"><br/>
+            <input type="text" id="boxName" placeholder="Ingrese su Nombre"><br/>
+            <input type="radio" name="genre" value="Femenino" checked>Femenino
+            <input type="radio" name="genre" value="Masculino">Masculino<br/>
+            <input type="button" value="Agregar Miembro" name="agregar" onclick="agregarMiembro();"><br/>
+            <input type="button" value="Ver Miembros" name="ver" onclick="verMiembroVentana();"><br/>
+
+            <p>Actualizar Miembro</p>
+            <input type="text" id="modificarId" placeholder="Buscar ID del miembro"><br/>
+            <input type="text" id="modificarNombre" placeholder="Nuevo Nombre"><br/>
+            <input type="radio" name="modificarGenre" value="Femenino">Femenino
+            <input type="radio" name="modificarGenre" value="Masculino">Masculino<br/>
+            <input type="button" value="Actualizar Miembro" onclick="ModificarMiembro();"><br/>
+            <input type="button" value="Ver Miembros" name="ver" onclick="verMiembroVentana();"><br/>
+
+            <p>Eliminar Miembro</p>
+            <input type="text" id="eliminarId" placeholder="Buscar ID del miembro"><br/>
+            <input type="button" value="Eliminar" onclick="eliminarMiembro();"><br/>
+        </form>
+
+    </center>
+</body>
+</html>
